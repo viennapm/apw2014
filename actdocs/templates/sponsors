@@ -1,0 +1,9 @@
+<h2>Sponsors</h2>
+
+<div><a href="[% make_uri_info('sponsors.html') %]">Sponsor werden</a></div>
+
+<!--
+<div>
+<a href=""><img src="[%# make_uri_info('images','foo.gif') %]" alt="ALT"></a>
+</div>
+-->

@@ -1,0 +1,131 @@
+[% BLOCK invoice_body  %]
+
+    <table border="0">
+        <tr>
+            <td>&nbsp;</td>
+            <td />
+        </tr>
+        <tr>
+            <td>
+                Vienna.pm - Verein zur Förderung der Programmiersprache Perl<br>
+                Max-Winter-Platz 6/32<br>
+                1020 Wien<br>
+                Österreich
+            </td>
+            <td align="right"><br><br>[% date_format(invoice.datetime, 'date_full') %]</td>
+        </tr>
+        <tr>
+            <td valign="top" width="50%">
+                [% invoice.first_name %]&nbsp;[% invoice.last_name %]<br>
+                [% IF invoice.company; invoice.company; "<br />"; END %]
+                [% invoice.address | html_line_break %]
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><b><t><en>Invoice: Austrian</en><de>Rechnung: Österreichischer</de></t> Perl Workshop 2013</b><br><br>
+            <b><t><en>Invoice #</en><fr>Facture N°</fr><it>Fattura n.</it><pt>Factura nº</pt><de>Rechnungs-Nr.</de></t></b>: [% invoice.invoice_no %]
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table border="1" width="100%">
+                    <tr>
+                        <th><t><en>Description</en><fr>Désignation</fr><it>Descrizione</it><pt>Descrição</pt><de>Beschreibung</de></t></th>
+                        <th><t><en>Quantity</en><fr>Quantité</fr><it>Quantità</it><pt>Quantidade</pt><de>Anzahl</de></t></th>
+                        <th><t><en>Unit Price</en><fr>Prix unitaire</fr><it>Prezzo unitario</it><pt>Preço unitário</pt><de>Stückpreis</de></t></th>
+                        <th><t><en>Total</en><fr>Total</fr><it>Totale</it><pt>Total</pt><de>Summe</de></t></th>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <t>
+                                <en>[% global.conference.name %] registration<br />Your order number:</en>
+                                <fr>Inscription à [% global.conference.name %]<br />Votre commande n°&nbsp;:</fr>
+                                <pt>Inscrição em [% global.conference.name %]<br />Compra:</pt>
+                                <it>Iscrizione a [% global.conference.name %]<br />Vostro ordine:</it>
+                                <de>[% global.conference.name %] 2.-3.11.2013<br />Ihre Bestellnummer:</de>
+                            </t>
+[%# info about the payment: order #, payment date and payment means you can use this to turn this invoice into a receipt %]
+[% order.order_id %] - [% date_format(order.datetime, 'date_short') %] - [% order.means %]
+                        </td>
+                        <td align="center">1</td>
+                        <td align="right">[% invoice.currency %] [% invoice.amount %]</td>
+                        <td align="right">[% invoice.currency %] [% invoice.amount %]</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="right"><t><en>Total due</en><fr>Total à payer</fr><it>Totale fattura</it><pt>Total a pagar</pt><de>Zu zahlende Summe</de></t></td>
+                        <td align="right">[% invoice.currency %] [% invoice.amount %]</td>
+                    </tr>
+                </table>
+                <t><de>Wir bitten, den Betrag von [% invoice.currency %] [% invoice.amount %] entweder bar am Workshop, durch Überweisung auf das Konto 2.776.474 bei der Raiffeisen (BLZ: 32000, IBAN: AT133200000002776474, BIC: RLNWATWW) lautend auf <i>Vienna.pm - Roland Lammel</i>, oder mit der Kreditkarten-Funktion auf der Website http://act.yapc.eu/apw2013/ zu bezahlen.
+                <br><br>
+                Es wird keine Mehrwertsteuer verrechnet.
+
+<pre>
+
+
+
+      Thomas Klausner              Roland Lammel
+          (Obmann)                   (Kassier)
+</pre>
+</de>
+<en>
+Please pay the amount of [% invoice.currency %] [% invoice.amount %] either in cash at the workshop, by bank transfere to the account nr. 2.776.474 at Raiffeisen (bank code 32000, IBAN: AT133200000002776474, BIC: RLNWATWW) registerd to <i>Vienna.pm - Roland Lammel</i>, or by using the credit card system on the website http://act.yapc.eu/apw2013/.
+<br><br>
+There is no VAT.
+</en>
+<pre>
+
+
+
+	  Thomas Klausner              Roland Lammel
+	    (Chairman)                  (Treasurer)
+</pre>
+
+</t>
+</td>
+      </tr>
+    </table>
+[% END %]
+
+[% IF printer_friendly %]
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]" xml:lang="[% global.request.language %]">
+<head>
+<title><t><en>Invoice</en><fr>Facture</fr><it>Fattura</it><pt>Factura</pt><de>Rechnung</de></t></title>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+[% PROCESS invoice_body %]
+</body>
+</html>
+
+
+[% ELSE;
+   WRAPPER ui title = loc('Invoice')
+%]
+
+<!--
+[%# Remove the following <div>...</div> if you use the printer_friendly version mechanism %]
+<div id="dontprint">
+<p><t>
+<en>You can print this page: only the invoice below will be printed.</en>
+<pt>Pode imprimir esta página; apenas a factura será impressa.</pt>
+<fr>Vous pouvez imprimer cette page&nbsp;: seule la facture ci-dessous
+sera imprimée.</fr>
+<it>Potete stampare questa pagina: solo la fattura sarà stampata.</it>
+<pt>Pode imprimirr esta página; apenas a factura será impressa.</pt>
+<de>Wenn diese Seite ausgedruckt wird, wird nur die Rechnung unten gedruckt.</de>
+</t></p>
+</div>
+-->
+
+[% PROCESS invoice_body %]
+
+<div align="center">
+<p><a href="[% printer_uri %]" target="_new"><t><fr>Version imprimable</fr><en>Printer friendly version</en><de>Drucker-freundliche Version</de><it>TRANSLATEME</it><pt>TRANSLATEME</pt></t></a></p>
+</div>
+
+[% END; END %]

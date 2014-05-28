@@ -32,7 +32,7 @@
 
 <body>
 <div id="header">
-<img border="0" src="[% make_uri_info('images','apw2013_s.png') %]" align="left">
+<img border="0" src="[% make_uri_info('images','apw2014_salzburg.png') %]" align="left">
 <t>
 <en>
 <h1>Austrian Perl Workshop 2013</h1>

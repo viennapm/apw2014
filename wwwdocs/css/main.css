@@ -1,5 +1,11 @@
 /* General settings */
 
+body {
+    background: linear-gradient( rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)),
+        url("http://paradiseintheworld.com/wp-content/uploads/2012/04/salzburg-austria.jpg") repeat-y scroll 0 0;
+    background-size: 100%;
+}
+
 @media print { #header, #menu, #sponsor { display: none; } }
 
 UL {

@@ -3,56 +3,56 @@
 @media print { #header, #menu, #sponsor { display: none; } }
 
 UL {
-	list-style-type: square;
-	list-style-position: inside;
+    list-style-type: square;
+    list-style-position: inside;
 }
 
 LI {
-	margin-bottom: 7px;
+    margin-bottom: 7px;
 }
 
 #menu A:Hover, #sponsor A:Hover {
-	background: none;
+    background: none;
 }
 
 #container A:Hover {
-	background-color: #b9c334;
-	color: black;
+    background-color: #b9c334;
+    color: black;
 }
 
 A:Link,A:Visited,A:Active {
-	color: black;
+    color: black;
 }
 
 A IMG {
-	border: none;
+    border: none;
 }
 
 /* Layout */
 
 #logo {
-  text-align:center;
+    text-align:center;
 }
 
 #menu {
-  margin-left:4px;
+    margin-left:4px;
 }
 
 #menu A {
-	display: block;
-	color: #700606;
+    display: block;
+    color: #700606;
     padding:2px;
 }
 
 #menu A:Hover {
-	background-color: #700606;
-	color: white;
+    background-color: #700606;
+    color: white;
 }
 
 .menu_box {
-	border: 1px solid #6f0505;
-	margin-top: 8px;
-	margin-bottom: 2px;
+    border: 1px solid #6f0505;
+    margin-top: 8px;
+    margin-bottom: 2px;
     padding:4px;
 }
 
@@ -65,34 +65,34 @@ A IMG {
 }
 
 .menu A:Link, .menu A:Visited, .menu A:Active {
-	color: #700606;
+    color: #700606;
 }
 
 #footer {
-	border-top: 1px solid #6f0505;
-  font-size: 0.8em;
+    border-top: 1px solid #6f0505;
+    font-size: 0.8em;
 
 }
 
 /* Text formating */
 
 .small {
-	color: #535353;
-	font-size: 0.8em;
+    color: #535353;
+    font-size: 0.8em;
 }
 
 H1 {
-	color: #d80505;
-	border-bottom: 1px solid #6f0505;
+    color: #d80505;
+    border-bottom: 1px solid #6f0505;
 }
 H2 {
-	color: #d80505;
+    color: #d80505;
 }
 H3 {
-	color: #d80505;
+    color: #d80505;
 }
 H4 {
-	color: #d80505;
+    color: #d80505;
 }
 
 dd {
@@ -101,34 +101,34 @@ dd {
 }
 
 dt {
-	font-weight: bold;
-  padding-top: 0.5em;
+    font-weight: bold;
+    padding-top: 0.5em;
 }
 
 dt img {
-	float: right;
+    float: right;
 }
 
 /* Spezielle Formate */
 
 .newsbox {
-	border: 1px dotted #6f0505;
-	padding: 10px;
-	font-size: 0.9em;
-	margin-left: 0px;
-	margin-bottom: 1px;
+    border: 1px dotted #6f0505;
+    padding: 10px;
+    font-size: 0.9em;
+    margin-left: 0px;
+    margin-bottom: 1px;
 }
 
 .newsbox H3  {
-	color: black;
+    color: black;
 }
 
 .box {
-	border: 1px solid #6f0505;
+    border: 1px solid #6f0505;
 }
 
 #content HR {
-	height: 1px;
+    height: 1px;
 }
 
 /* Tabellen für ACT */
@@ -137,52 +137,52 @@ dt img {
 }
 
 #content TABLE {
-	border: 1px solid #6f0505;
-	width: 100%;
-	border-spacing: 2px;
-	border-collapse: collapse;
-	empty-cells:show;
+    border: 1px solid #6f0505;
+    width: 100%;
+    border-spacing: 2px;
+    border-collapse: collapse;
+    empty-cells:show;
 }
 
 #content TABLE.grid TD {
-	border: 1px solid #6f0505;
+    border: 1px solid #6f0505;
 }
 
 #content TABLE TD {
-	vertical-align: top;
-	text-align: left;
+    vertical-align: top;
+    text-align: left;
 }
 
 #content FIELDSET {
-	border: none;
-	border: 1px solid #535353;
+    border: none;
+    border: 1px solid #535353;
 }
 
 
 #content TABLE TABLE {
-	border: none;
-	border-collapse: separate;
-	width: 100%;
-	border-spacing: 3px;
+    border: none;
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 3px;
 }
 
 #content FIELDSET TABLE {
-	border: none;
+    border: none;
 }
 
 #content TH {
-		background-color: #565550;
-		color: white;
+    background-color: #565550;
+    color: white;
 }
 
 #content .highlight {
-		background-color: #c0c920;
+    background-color: #c0c920;
 }
 
 
 /* Sponsors */
 
 #sponsor_wrapper {
-	margin: 5px;
+    margin: 5px;
 }
 

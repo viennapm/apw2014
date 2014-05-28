@@ -47,6 +47,7 @@ A IMG {
 #menu A:Hover {
     background-color: #700606;
     color: white;
+    text-decoration: none;
 }
 
 .menu_box {
@@ -82,6 +83,7 @@ A IMG {
     line-height: 1;
     position: relative;
     top: 1px;
+    margin-right: 4px;
 }
 
 /* Text formating */

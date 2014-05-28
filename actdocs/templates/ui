@@ -1,17 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]" xml:lang="[% global.request.language %]">
-
-<head>
+<html>
+  <head>
     <!-- Document Metadata -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Language" content="[% global.request.language %]" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="en">
 
     <title>[%- IF title -%][% title  %] |[% END %] Austrian Perl Workshop 2013 | 2nd and 3rd November</title>
 
     <!-- CSS stylesheets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="[% make_uri_info('css','bootstrap.min.css') %]" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="[% make_uri_info('css','main.css') %]" />
-    <link rel="stylesheet" type="text/css" href="[% make_uri_info('css','schedule.css') %]" />
     <link rel="stylesheet" type="text/css" href="[% make_uri_info('css','print.css') %]" media="print" />
 
     <!-- OpenId -->
@@ -21,65 +19,54 @@
     <!-- Atom news feed -->
     <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
       href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml" />
-      
-	<!-- JavaScript sugar -->
-	<script type="text/javascript" src="/js/jquery.js"></script>
-	<script type="text/javascript" src="/js/act.js"></script>
-	
-	<!-- Favorite icon -->
-	<link rel="shortcut icon" type="image/png" href="/favicon.png" />
-</head>
+    <!-- Favorite icon -->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+  </head>
 
 <body>
-<div id="header">
-<img border="0" src="[% make_uri_info('images','apw2014_salzburg.png') %]" align="left">
-<t>
-<en>
-<h1>Austrian Perl Workshop 2013</h1>
-<h2>2nd and 3rd November</h2>
-<h2>Salzburg</h2>
-</en>
-<de>
-<h1>Österreichischer Perl Workshop 2013</h1>
-<h2>2. und 3. November</h2>
-<h2>Salzburg</h2>
-</de>
-</t>
-</div>
-
-<div id="container">
-
-    <div id="menu">
-        <div id="menu_wrapper">
+  <div class="row">
+    <div class="col-md-3">
+      <div id="logo">
+        <a href="/"><img src="[% make_uri_info('images','apw2014_salzburg.png') %]" border="0"></a>
+      </div>
+      <div id="menu">
         [% PROCESS menu %]
-        </div>
+      </div>
     </div>
 
-    <div id="content">
-        [%- IF title -%]<h1>[% title  %]</h1>[%- END -%]
-        [% content %]
-        <div class="small">
-            <br />
-            © 2003-2013 Verein 'Vienna.pm - Verein zur F&ouml;rderung der Programmiersprache Perl'.<br />
-            To contact the organisers send an email to apw2013 @ plix.at
-            <br />
-            <a href="[% make_uri('impressum.html') %]">
-            <t>
-                <en>About</en>
-                <de>Impressum</en>
-            </t>
-            </a>
-        </div>
+    <div class="col-md-7">
+      [%- IF title -%]<h1>[% title  %]</h1>[%- END -%]
+      [% content %]
     </div>
 
-    <div id="sponsor">
-        <div id="sponsor_wrapper">
+    <div class="col-md-2">
+      <div id="sponsor">
         [% PROCESS sponsors %]
-        </div>
+      </div>
     </div>
 
-</div>
+  </div>
+
+
+  <div class="row" id="footer">
+    <div class="col-md-3"></div>
+    <div class="col-md-8">
+      © 2003-2013 Verein 'Vienna.pm - Verein zur Förderung der Programmiersprache Perl'.<br>
+      To contact the organisers send an email to apw2013 @ plix.at
+      <br>
+      <a href="[% make_uri('impressum.html') %]">
+        <t>
+          <en>About</en>
+          <de>Impressum</en>
+        </t>
+      </a>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+  <script type="text/javascript" src="[% make_uri_info('js','jquery-1.10.2.min.js') %]"></script>
+  <script type="text/javascript" src="/js/act.js"></script>
+  <script type="text/javascript" src="[% make_uri_info('js','bootstrap.min.js') %]"></script>
 
 </body>
 </html>
-

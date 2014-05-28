@@ -1,27 +1,33 @@
-<div class="menu_section"><a href="[% make_uri('index.html') %]">Workshop</a></div>
-
-<div class="menu_item"><a href="[% make_uri('venue.html') %]">Venue</a></div>
-
-<div class="menu_item"><a href="[% make_uri('impressum.html') %]">
-<t>
-<de>Kontakt</de>
-<en>Contact</en>
-</t>
-</a></div>
-
-<div class="menu_item"><a href="[% make_uri('sponsors.html') %]">
-<t>
-<de>Sponsoren</de>
-<en>Sponsors</en>
-</t>
-</a></div>
-
+<div class="menu_box">
+  <a href="[% make_uri('index.html') %]">Workshop</a>
+  <a href="[% make_uri('venue.html') %]"><t><de>Veranstaltungsort</de><en>Venue</en></t></a>
+  <a href="[% make_uri('impressum.html') %]"> <t> <de>Kontakt</de> <en>Contact</en> </t> </a>
+  <a href="[% make_uri('sponsors.html') %]"> <t> <de>Sponsoren</de> <en>Sponsors</en> </t> </a>
+</div> 
+<div class="menu_box">
 [% PROCESS menus/user %]
+</div>
+<div class="menu_box">
 [% PROCESS menus/users %]
+</div>
+<div class="menu_box">
 [% PROCESS menus/news %]
+</div>
+<div class="menu_box">
 [% PROCESS menus/wiki %]
+</div>
+<div class="menu_box">
 [% PROCESS menus/talks %]
+</div>
+<div class="menu_box">
 [% PROCESS menus/events %]
+</div>
+<div class="menu_box">
 [% PROCESS menus/treasurer %]
+</div>
+<div class="menu_box">
 [% PROCESS menus/admin %]
+</div>
+<div class="menu_box">
 [% PROCESS menus/act_confs %]
+</div>

@@ -74,6 +74,16 @@ A IMG {
 
 }
 
+#menu i {
+    display: inline;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+    top: 1px;
+}
+
 /* Text formating */
 
 .small {

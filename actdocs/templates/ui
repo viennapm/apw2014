@@ -30,7 +30,7 @@
                     [% PROCESS menu %]
                 </div>
             </div>
-            <div class="col-md-8">
+            <div id="content" class="col-md-8">
                 [%- IF title -%]<h1>[% title  %]</h1>[%- END -%]
                 [% content %]
             </div>
@@ -43,8 +43,8 @@
         <div class="row" id="footer">
             <div class="col-md-3"></div>
             <div class="col-md-8">
-                © 2003-2013 Verein 'Vienna.pm - Verein zur Förderung der Programmiersprache Perl'.<br/>
-                To contact the organisers send an email to apw2013 @ plix.at
+                © 2003-2014 Verein 'Vienna.pm - Verein zur Förderung der Programmiersprache Perl'.<br/>
+                To contact the organisers send e-mail to apw2014@plix.at
                 <br/>
                 <a href="[% make_uri('impressum.html') %]">
                 <t>

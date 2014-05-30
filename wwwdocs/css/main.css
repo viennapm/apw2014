@@ -8,29 +8,29 @@ body {
 
 @media print { #header, #menu, #sponsor { display: none; } }
 
-UL {
+ul {
     list-style-type: square;
     list-style-position: inside;
 }
 
-LI {
+li {
     margin-bottom: 7px;
 }
 
-#menu A:Hover, #sponsor A:Hover {
+#menu a:hover, #sponsor a:hover {
     background: none;
 }
 
-#container A:Hover {
+#container a:hover {
     background-color: #b9c334;
     color: black;
 }
 
-A:Link,A:Visited,A:Active {
+a:link,a:visited,a:active {
     color: black;
 }
 
-A IMG {
+a img {
     border: none;
 }
 
@@ -44,16 +44,20 @@ A IMG {
     margin-left:4px;
 }
 
-#menu A {
+#menu a {
     display: block;
     color: #700606;
     padding:2px;
 }
 
-#menu A:Hover {
+#menu a:hover {
     background-color: #700606;
     color: white;
     text-decoration: none;
+}
+
+#content a {
+    text-decoration: underline;
 }
 
 .menu_box {
@@ -71,7 +75,7 @@ A IMG {
 
 }
 
-.menu A:Link, .menu A:Visited, .menu A:Active {
+.menu a:link, .menu a:visited, .menu a:active {
     color: #700606;
 }
 
@@ -99,17 +103,17 @@ A IMG {
     font-size: 0.8em;
 }
 
-H1 {
+h1 {
     color: #d80505;
     border-bottom: 1px solid #6f0505;
 }
-H2 {
+h2 {
     color: #d80505;
 }
-H3 {
+h3 {
     color: #d80505;
 }
-H4 {
+h4 {
     color: #d80505;
 }
 
@@ -137,7 +141,7 @@ dt img {
     margin-bottom: 1px;
 }
 
-.newsbox H3  {
+.newsbox h3  {
     color: black;
 }
 
@@ -145,16 +149,16 @@ dt img {
     border: 1px solid #6f0505;
 }
 
-#content HR {
+#content hr {
     height: 1px;
 }
 
 /* Tabellen für ACT */
 
-#content TABLE.usertable {
+#content table.usertable {
 }
 
-#content TABLE {
+#content table {
     border: 1px solid #6f0505;
     width: 100%;
     border-spacing: 2px;
@@ -162,33 +166,33 @@ dt img {
     empty-cells:show;
 }
 
-#content TABLE.grid TD {
+#content table.grid td {
     border: 1px solid #6f0505;
 }
 
-#content TABLE TD {
+#content table td {
     vertical-align: top;
     text-align: left;
 }
 
-#content FIELDSET {
+#content fieldset {
     border: none;
     border: 1px solid #535353;
 }
 
 
-#content TABLE TABLE {
+#content table table {
     border: none;
     border-collapse: separate;
     width: 100%;
     border-spacing: 3px;
 }
 
-#content FIELDSET TABLE {
+#content fieldset table {
     border: none;
 }
 
-#content TH {
+#content th {
     background-color: #565550;
     color: white;
 }

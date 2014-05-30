@@ -4,12 +4,12 @@
   <a href="[% make_uri('impressum.html') %]"><i class="glyphicon-envelope"></i><t><de>Kontakt</de><en>Contact</en> </t> </a>
   <a href="[% make_uri('sponsors.html') %]"><i class="glyphicon-cutlery"></i><t><de>Sponsoren</de><en>Sponsors</en> </t> </a>
 </div>
-<div class="menu_box">[%- PROCESS menus/user | trim -%]</div>
-<div class="menu_box">[%- PROCESS menus/users | trim -%]</div>
-<div class="menu_box">[%- PROCESS menus/news | trim -%]</div>
-<div class="menu_box">[%- PROCESS menus/wiki | trim -%]</div>
-<div class="menu_box">[%- PROCESS menus/talks | trim -%]</div>
-<div class="menu_box">[%- PROCESS menus/events | trim -%]</div>
-<div class="menu_box">[%- PROCESS menus/treasurer | trim -%]</div>
-<div class="menu_box">[%- PROCESS menus/admin | trim -%]</div>
-<div class="menu_box">[%- PROCESS menus/act_confs | trim -%]</div>
+<div class="menu_box user">[%- PROCESS menus/user | trim -%]</div>
+<div class="menu_box users">[%- PROCESS menus/users | trim -%]</div>
+<div class="menu_box news">[%- PROCESS menus/news | trim -%]</div>
+<div class="menu_box wiki">[%- PROCESS menus/wiki | trim -%]</div>
+<div class="menu_box talks">[%- PROCESS menus/talks | trim -%]</div>
+<div class="menu_box events">[%- PROCESS menus/events | trim -%]</div>
+<div class="menu_box treasurer">[%- PROCESS menus/treasurer | trim -%]</div>
+<div class="menu_box admin">[%- PROCESS menus/admin | trim -%]</div>
+<div class="menu_box act_confs">[%- PROCESS menus/act_confs | trim -%]</div>

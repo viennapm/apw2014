@@ -3,7 +3,7 @@
 <!-- Document Metadata -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta http-equiv="Content-Language" content="en"/>
-<title>[%- IF title -%][% title  %] |[% END %] Austrian Perl Workshop 2013 | 2nd and 3rd November</title>
+<title>[%- IF title -%][% title  %] |[% END %] Austrian Perl Workshop 2014 | 10th and 11th October</title>
 <!-- CSS stylesheets -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link href="[% make_uri_info('css','bootstrap-3.1.1.min.css') %]" rel="stylesheet" media="screen"/>

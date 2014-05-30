@@ -45,7 +45,7 @@
                                 <fr>Inscription à [% global.conference.name %]<br />Votre commande n°&nbsp;:</fr>
                                 <pt>Inscrição em [% global.conference.name %]<br />Compra:</pt>
                                 <it>Iscrizione a [% global.conference.name %]<br />Vostro ordine:</it>
-                                <de>[% global.conference.name %] 2.-3.11.2013<br />Ihre Bestellnummer:</de>
+                                <de>[% global.conference.name %] 10.-13.10.2014<br />Ihre Bestellnummer:</de>
                             </t>
 [%# info about the payment: order #, payment date and payment means you can use this to turn this invoice into a receipt %]
 [% order.order_id %] - [% date_format(order.datetime, 'date_short') %] - [% order.means %]
@@ -72,7 +72,7 @@
 </pre>
 </de>
 <en>
-Please pay the amount of [% invoice.currency %] [% invoice.amount %] either in cash at the workshop, by bank transfere to the account nr. 2.776.474 at Raiffeisen (bank code 32000, IBAN: AT133200000002776474, BIC: RLNWATWW) registerd to <i>Vienna.pm - Roland Lammel</i>, or by using the credit card system on the website http://act.yapc.eu/apw2013/.
+Please pay the amount of [% invoice.currency %] [% invoice.amount %] either in cash at the workshop, by bank transfere to the account nr. 2.776.474 at Raiffeisen (bank code 32000, IBAN: AT133200000002776474, BIC: RLNWATWW) registerd to <i>Vienna.pm - Roland Lammel</i>, or by using the credit card system on the website http://act.yapc.eu/apw2014/.
 <br><br>
 There is no VAT.
 </en>

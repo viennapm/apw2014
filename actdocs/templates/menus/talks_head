@@ -1,0 +1,10 @@
+[% WRAPPER menus/section %]
+<a href="[% make_uri('talks') %]">
+ <i class="glyphicon-bullhorn"></i>{{Presentations}}
+</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('favtalks') %]">
+ <i class="glyphicon-star"></i>{{Favorite Talks}}
+</a>
+[% END %]

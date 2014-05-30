@@ -1,0 +1,31 @@
+<!-- users menu -->
+[% WRAPPER menus/section %]
+{{Users}}
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('search') %]">
+ <i class="glyphicon-search"></i>{{Search}}
+</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('stats') %]">
+ <i class="glyphicon-stats"></i>{{Statistics}}
+</a>
+[% END %]
+[% IF global.request.user.is_users_admin %]
+[% WRAPPER menus/item %]
+<i class="glyphicon-export"></i><a href="[% make_uri('export') %]">
+ {{CSV export}}
+</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('confirm_attend') %]">
+ <i class="glyphicon-ok"></i>{{Confirm Attendance}}
+</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('create') %]">
+ <i class="glyphicon-plus-sign"></i>{{Register a new user}}
+</a>
+[% END %]
+[% END %]

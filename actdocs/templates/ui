@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-md-2">
                 <div id="logo">
-                    <a href="/apw2014/"><img src="[% make_uri_info('images','apw2014-salzburg-traced.svg') %]" border="0"></a>
+                    <a href="/apw2014/"><img src="[% make_uri_info('images','apw2014-salzburg.svg') %]" border="0"></a>
                 </div>
                 <div id="menu">
                     [% PROCESS menu %]

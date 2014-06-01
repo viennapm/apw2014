@@ -22,7 +22,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2"><b><t><en>Invoice: Austrian</en><de>Rechnung: Österreichischer</de></t> Perl Workshop 2013</b><br><br>
+            <td colspan="2"><b><t><en>Invoice: Austrian</en><de>Rechnung: Österreichischer</de></t> Perl Workshop 2014</b><br><br>
             <b><t><en>Invoice #</en><fr>Facture N°</fr><it>Fattura n.</it><pt>Factura nº</pt><de>Rechnungs-Nr.</de></t></b>: [% invoice.invoice_no %]
             </td>
         </tr>
@@ -59,7 +59,7 @@
                         <td align="right">[% invoice.currency %] [% invoice.amount %]</td>
                     </tr>
                 </table>
-                <t><de>Wir bitten, den Betrag von [% invoice.currency %] [% invoice.amount %] entweder bar am Workshop, durch Überweisung auf das Konto 2.776.474 bei der Raiffeisen (BLZ: 32000, IBAN: AT133200000002776474, BIC: RLNWATWW) lautend auf <i>Vienna.pm - Roland Lammel</i>, oder mit der Kreditkarten-Funktion auf der Website http://act.yapc.eu/apw2013/ zu bezahlen.
+                <t><de>Wir bitten, den Betrag von [% invoice.currency %] [% invoice.amount %] entweder bar am Workshop, durch Überweisung auf das Konto 2.776.474 bei der Raiffeisen (BLZ: 32000, IBAN: AT133200000002776474, BIC: RLNWATWW) lautend auf <i>Vienna.pm - Roland Lammel</i>, oder mit der Kreditkarten-Funktion auf der Website http://act.yapc.eu/apw2014/ zu bezahlen.
                 <br><br>
                 Es wird keine Mehrwertsteuer verrechnet.
 

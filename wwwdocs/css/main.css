@@ -41,7 +41,13 @@ a img {
 }
 
 #logo img {
-    width: 85%;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    #logo img {
+        max-height: 190px;
+    }
 }
 
 #menu {

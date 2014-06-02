@@ -40,6 +40,10 @@ a img {
     text-align:center;
 }
 
+#logo img {
+    width: 85%;
+}
+
 #menu {
     margin-left:4px;
 }
